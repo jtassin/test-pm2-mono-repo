@@ -1,0 +1,18 @@
+{
+  "name": "test-pm2-mono-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "git@github.com:jtassin/test-pm2-mono-repo.git",
+  "author": "Julien Tassin <julien@gokepler.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "pm2": "^3.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start pm2.config.js --no-daemon"
+  }
+}
